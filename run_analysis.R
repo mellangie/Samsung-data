@@ -1,7 +1,7 @@
 
 if (!file.info("UCI HAR Dataset")$isdir) {
   dataFile <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  dir.create("Proyecto")
+  dir.create("data")
   download.file(dataFile, "./data/UCI-HAR-dataset.zip", method="libcurl")
   unzip("./data/UCI-HAR-dataset.zip")
 }
